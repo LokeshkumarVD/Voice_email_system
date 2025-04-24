@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f7fa;
+    color: #222;
+  }
+  
+  header {
+    background-color: #4285F4;
+    color: white;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  /* Toolbar Styles */
+  .toolbar {
+    width: 220px;
+    background-color: #eaf1fb;
+    height: calc(100vh - 66px);
+    border-right: 1px solid #ccc;
+    padding-top: 1rem;
+  }
+  
+  .toolbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .toolbar li {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .toolbar li:hover {
+    background-color: #d2e3fc;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 3rem;
+    text-align: center;
+  }
+  
+  .main-content h2 {
+    font-size: 2rem;
+  }
+  
+  #instruction {
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+  #actionFeedback {
+    margin-top: 2rem;
+    font-style: italic;
+    font-size: 1.1rem;
+    border: 2px dashed #ccc;
+    padding: 1rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  

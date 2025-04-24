@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Talking Mailbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onclick="startVoicePrompt()">
+    <div class="container">
+        <h1>Welcome to The Talking Mailbox</h1>
+        <p class="tagline">Let Your Voice Be Heard, Let Your Mail Be Seen</p>
+    </div>
+    <div class="auth-box">
+        <img src="../assets/mail_icon.png" alt="Mail Icon">
+        <h2>Sign in to continue</h2>
+        <div class="options">
+            <p class="info-text">New users only</p>
+            <button onclick="verifyChoice('Sign Up')">Sign up</button>
+            <p class="info-text">Existing users only</p>
+            <button onclick="verifyChoice('Sign In')">Sign in</button>
+        </div>
+        <div class="footer">Powered by The Talking Mailbox</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

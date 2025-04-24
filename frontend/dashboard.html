@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard – The Talking Mailbox</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header>
+    <h1>The Talking Mailbox</h1>
+    <span id="voiceStatus">🎤 Voice Assistant: Listening...</span>
+  </header>
+
+  <div class="container">
+    <!-- Toolbar Section -->
+    <nav class="toolbar">
+      <ul>
+        <li id="compose">📧 Compose</li>
+        <li id="inbox">📥 Inbox</li>
+        <li id="sent">📤 Sent</li>
+        <li id="starred">⭐ Starred</li>
+        <li id="trash">🗑️ Trash</li>
+        <li id="archive">🗄️ Archive</li>
+        <li id="logout">🚪 Logout</li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <h2 id="greeting">Welcome!</h2>
+      <p id="instruction">Speak a command like "Compose", "Inbox", or "Logout".</p>
+      <div id="actionFeedback">Waiting for your voice command...</div>
+    </main>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
