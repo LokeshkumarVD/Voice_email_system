@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoiceMail - Compose Email</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        .compose-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .voice-status {
+            padding: 8px 12px;
+            background-color: #e0e0e0;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        .listening {
+            background-color: #4285F4;
+            color: white;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        textarea {
+            min-height: 200px;
+            resize: vertical;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .send-btn {
+            background-color: #4285F4;
+            color: white;
+        }
+        .discard-btn {
+            background-color: #f1f1f1;
+        }
+        .voice-feedback {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f8f8;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="compose-container">
+        <div class="header">
+            <h1>Compose Email</h1>
+            <div id="voiceStatus" class="voice-status">Voice: Off</div>
+        </div>
+
+        <div class="form-group">
+            <label for="to">To:</label>
+            <input type="text" id="to" placeholder="Say 'Add recipient' followed by the email address">
+        </div>
+
+        <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" placeholder="Say 'Subject' followed by your subject">
+        </div>
+
+        <div class="form-group">
+            <label for="body">Email Body:</label>
+            <textarea id="body" placeholder="Say 'Message' followed by your message"></textarea>
+        </div>
+
+        <div class="buttons">
+            <button id="sendBtn" class="send-btn">Send</button>
+            <button id="discardBtn" class="discard-btn">Discard</button>
+        </div>
+
+        <div id="voiceFeedback" class="voice-feedback" aria-live="polite"></div>
+    </div>
+
+    <script src="compose.js"></script>
+</body>
+</html>
